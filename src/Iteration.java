@@ -41,5 +41,12 @@ public class Iteration {
             System.out.println("c = " + c);
         }
 
+        // 중첩
+        for (int n=0; n<10; n++) {
+            for (int m=0; m<10; m++) {
+                System.out.println("nm = " + n+m);
+            }
+        }
+
     }
 }
