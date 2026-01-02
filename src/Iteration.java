@@ -20,5 +20,26 @@ public class Iteration {
             System.out.println("--- gyul Coding everyday : day " + r);
         }
 
+        // break 와 continue
+        int a = 0;
+        while (a < 10) {
+            System.out.println("a = " + a);
+            a ++;
+        }
+
+        int b = 0;
+        while (b < 10) {
+            if (b==5)
+                break;
+            System.out.println("b = " + b);
+            b ++;
+        }
+
+        for (int c=0; c<10; c++) {
+            if (c==5)
+                continue;
+            System.out.println("c = " + c);
+        }
+
     }
 }
