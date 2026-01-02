@@ -24,5 +24,27 @@ public class Condition {
                 System.out.println("three");
                 break;
         }
+
+        // 논리연산자와의 결합
+        String id = "gyul";
+        String password = "password1234";
+
+        if (id.equals("gyul") && password.equals("password1234")) {
+            System.out.println("success!");
+        } else {
+            System.out.println("fail!");
+        }
+
+        if (id.equals("gyul") || password.equals("password0000")) {
+            System.out.println("success@");
+        } else {
+            System.out.println("fail@");
+        }
+
+        if (!id.equals("gyul") || !password.equals("password1234")) {
+            System.out.println("fail~");
+        } else {
+            System.out.println("success~");
+        }
     }
 }
