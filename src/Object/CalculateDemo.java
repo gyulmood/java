@@ -13,5 +13,7 @@ public class CalculateDemo {
         Calculator c2 = new Calculator();
         c2.setOperands(20, 40);
         c2.avg();
+
+        // Calculator c3 = new Calculator(15, 30);
     }
 }
