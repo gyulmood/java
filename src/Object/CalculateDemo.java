@@ -15,5 +15,11 @@ public class CalculateDemo {
         c2.avg();
 
         // Calculator c3 = new Calculator(15, 30);
+
+        SubtractionableCalculator c4 = new SubtractionableCalculator();
+        c4.setOperands(60, 50);
+        c4.sum();
+        c4.avg();
+        c4.subtract();
     }
 }
