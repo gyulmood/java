@@ -12,6 +12,28 @@ public class Condition {
             System.out.println("three");
         }
 
+        /**
+         * 81 <= .. <= 100 사이에 속하는 점수를 뽑아내어
+         * 바깥 if 문은 90점과 80점을 기준으로,
+         * 중첩 if 문은 95점과 85점을 기준으로 A+, A, B+, B, C 출력
+         */
+        int score = (int) (Math.random() * 20) + 81;
+        if (score >= 90) {
+            if (score >= 95) {
+                System.out.println("score = " + score + "(A+)");
+            } else {
+                System.out.println("score = " + score + "(A)");
+            }
+        } else if (score >= 80) {
+            if (score >= 85) {
+                System.out.println("score = " + score + "(B+)");
+            } else {
+                System.out.println("score = " + score + "(B)");
+            }
+        } else {
+            System.out.println("score = " + score + "(C)");
+        }
+
         // switch 문
         switch (a) {
             case 1 :
